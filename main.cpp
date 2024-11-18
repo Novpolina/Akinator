@@ -20,16 +20,24 @@ int main(){
     // node2->right = node5;
     // node3->left = node6;
     // node3->right = node7;
-    // Akinator(node1);
     node_t* node1 = {};
     ReadTreeFromFile(&node1, "akinator.txt");
-    //DestructNode(node1);
+    game(node1);
 
-    //Print(node1);
+
+    //DestructNode(node1);
+    //Akinator(node1);
+    // FindPathToWord(node1, "Петрович");
+    // CompareWords(node1, "Петрович", "Женечка");
+    // //Print(node1);
     export_tree_to_dot(node1, "tree.dot");
+    WriteTreeToFile(node1, "akinator.txt");
     DestructNode(node1);
+
+
     
 
 
+                                                                                                                                                                                                                                                                                                                                            printf("Люблю Полину\nОна солнышко\n");
 
 }

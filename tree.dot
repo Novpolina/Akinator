@@ -1,0 +1,32 @@
+digraph G {
+	bgcolor = "white:purple";
+	node_64 [shape = Mrecord, color = white, label="{{Человек} | {<f1> Нет | <f2> Да}}"];
+	node_64:<f1> -> node_160;
+	node_160 [shape = Mrecord, color = white, label="{{Ведет бебры} | {<f1> Нет | <f2> Да}}"];
+	node_160:<f1> -> node_208;
+	node_208 [shape = Mrecord, color = white, label="{{Дракон} | {<f1> Нет | <f2> Да}}"];
+	node_208:<f1> -> node_256;
+	node_256 [shape = Mrecord, color = white, label="{Умнов}"];
+	node_208:<f2> -> node_352;
+	node_352 [shape = Mrecord, color = white, label="{Дракон Русский}"];
+	node_160:<f2> -> node_400;
+	node_400 [shape = Mrecord, color = white, label="{Филатов}"];
+	node_64:<f2> -> node_496;
+	node_496 [shape = Mrecord, color = white, label="{{Солнышко} | {<f1> Нет | <f2> Да}}"];
+	node_496:<f1> -> node_544;
+	node_544 [shape = Mrecord, color = white, label="{{Загадывает загадки} | {<f1> Нет | <f2> Да}}"];
+	node_544:<f1> -> node_640;
+	node_640 [shape = Mrecord, color = white, label="{{Любит Полторашку} | {<f1> Нет | <f2> Да}}"];
+	node_640:<f1> -> node_736;
+	node_736 [shape = Mrecord, color = white, label="{Петрович}"];
+	node_640:<f2> -> node_784;
+	node_784 [shape = Mrecord, color = white, label="{Дед}"];
+	node_544:<f2> -> node_880;
+	node_880 [shape = Mrecord, color = white, label="{Сидельников}"];
+	node_496:<f2> -> node_928;
+	node_928 [shape = Mrecord, color = white, label="{{Любит шоколадные шарики} | {<f1> Нет | <f2> Да}}"];
+	node_928:<f1> -> node_976;
+	node_976 [shape = Mrecord, color = white, label="{Женечка}"];
+	node_928:<f2> -> node_1024;
+	node_1024 [shape = Mrecord, color = white, label="{Полина}"];
+}
