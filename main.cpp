@@ -21,7 +21,7 @@ int main(){
     // node3->left = node6;
     // node3->right = node7;
     node_t* node1 = {};
-    ReadTreeFromFile(&node1, "akinator.txt");
+    ReadTreeFromFile(&node1, "./res/akinator.txt");
     game(node1);
 
 
@@ -30,8 +30,8 @@ int main(){
     // FindPathToWord(node1, "Петрович");
     // CompareWords(node1, "Петрович", "Женечка");
     // //Print(node1);
-    export_tree_to_dot(node1, "tree.dot");
-    WriteTreeToFile(node1, "akinator.txt");
+    export_tree_to_dot(node1, "./res/tree.dot");
+    WriteTreeToFile(node1, "./res/akinator.txt");
     DestructNode(node1);
 
 

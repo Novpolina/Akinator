@@ -20,7 +20,11 @@ digraph G {
 	node_640:<f1> -> node_736;
 	node_736 [shape = Mrecord, color = white, label="{Петрович}"];
 	node_640:<f2> -> node_784;
-	node_784 [shape = Mrecord, color = white, label="{Дед}"];
+	node_784 [shape = Mrecord, color = white, label="{{Второкурсник} | {<f1> Нет | <f2> Да}}"];
+	node_784:<f1> -> node_1072;
+	node_1072 [shape = Mrecord, color = white, label="{Дед}"];
+	node_784:<f2> -> node_1120;
+	node_1120 [shape = Mrecord, color = white, label="{Вова}"];
 	node_544:<f2> -> node_880;
 	node_880 [shape = Mrecord, color = white, label="{Сидельников}"];
 	node_496:<f2> -> node_928;

@@ -301,7 +301,7 @@ void export_tree_to_dot(node_t* node, const char* filename) {
     fprintf(file, "}\n");
 
     fclose(file);
-    system("dot -Tpng tree.dot > tree.png");
+    system("dot -Tpng ./res/tree.dot > ./res/tree.png");
 }
 
 void ReadTreeFromFile(node_t** node, const char* file_with_tree){
